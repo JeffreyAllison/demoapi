@@ -4,6 +4,7 @@ import { getPokedex } from './fetch-utilis.js';
 const template = document.querySelector('#template');
 const selectEl = document.querySelector('select');
 const list = document.querySelector('#list');
+const errorElement = document.querySelector('#error-message');
 
 async function loadPokedex() {
     const pokedex = await getPokedex();
@@ -32,8 +33,8 @@ async function loadPokedex() {
 
 loadPokedex();
 // set event listeners
-selectEl.addEventListener('change', async (event) => )
-const selected = event.target.value;
+selectEl.addEventListener('change', async (e) => )
+const selected = e.target.value;
 
 if (selected === 'none') {
     const p = document.createElement('p');
