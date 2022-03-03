@@ -4,7 +4,7 @@ export async function getPokedex() {
 
     const response = await fetch(url);
 
-    const jsonResponse = await response.json();
+    const json = await response.json();
 
     return json.results;
 }
