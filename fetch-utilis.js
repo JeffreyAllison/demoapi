@@ -10,7 +10,7 @@ export async function getPokedex() {
 
 export async function getStarWarsPeople() {
     let url = 'https://swapi.dev/api/people';
-    const resp = await fetch(url);
-    const json = await response.json();
+    const response = await fetch(url);
+    const jsonResponse = await response.json();
     return jsonResponse.results;
 }
