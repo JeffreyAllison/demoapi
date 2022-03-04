@@ -29,7 +29,7 @@ async function loadPokedex() {
     }
 }
 async function loadStarWarsPeople() {
-    const pokedex = await getStarWarsPeople();
+    const starWars = await getStarWarsPeople();
     list.classList.add('star-wars');
 
     for (let person of starWars) {
