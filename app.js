@@ -16,10 +16,16 @@ async function loadPokedex() {
         const name = clone.querySelector('h2');
         const image = clone.querySelector('img');
         const type = clone.querySelector('h6');
+        const type2 = clone.querySelector('h7');
+        const height = clone.querySelector('h8');
 
         name.textContent = 'Name: ' + pokemon.pokemon;
 
         type.textContent = 'Type: ' + pokemon.type_1;
+
+        type2.textContent = 'Type ' + pokemon.type_2;
+
+        height.textContent = 'Height: ' + pokemon.height;
 
         image.src = pokemon.url_image;
         image.alt = pokemon.pokemon;
@@ -37,10 +43,13 @@ async function loadStarWarsPeople() {
 
         const name = clone.querySelector('h2');
         const type = clone.querySelector('h6');
+        const birth = clone.querySelector('h7');
 
         name.textContent = 'Name: ' + person.name;
 
         type.textContent = 'Hair color: ' + person.hair_color;
+
+        birth.textContent = 'Birth: ' + person.birth_year;
 
         list.appendChild(clone);
 

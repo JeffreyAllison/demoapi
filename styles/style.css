@@ -4,8 +4,8 @@ body {
     /* feel free to update these css variables for a quick theme */
 
     --color1: rgb(35, 187, 4);
-    --color2: rgba(114, 87, 114, 0.336);
-    --color3: rgb(151, 49, 49);
+    --color2: rgb(0, 0, 0);
+    --color3: rgb(75, 148, 85);
     --color4: rgb(134, 165, 61);
     --color5: rgb(63, 5, 5);
 
@@ -70,9 +70,32 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-style: italic; 
+    text-decoration: underline;
+    color: white
+}
+
+h6 {
+    font-size: 1.2rem;
     font-weight: bold;
     font-style: italic;
+    color: white 
+}
+
+h7 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white 
+}
+
+h8 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white 
 }
 
 .gutter-right {
@@ -90,10 +113,10 @@ p {
 footer {
     position: fixed;
     font-style: italic;
-    width: 100%;
+    width: 19%;
     bottom: 0%;
     display: flex;
-    justify-content: flex-start;
-    background-color: var(--color3);
+    justify-content: left;
+    background-color: var(--color4);
     box-shadow: var(--shadow);
 }
