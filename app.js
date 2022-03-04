@@ -36,7 +36,6 @@ async function loadStarWarsPeople() {
         const clone = template.content.cloneNode(true);
 
         const name = clone.querySelector('h2');
-        const image = clone.querySelector('img');
         const type = clone.querySelector('h6');
 
         name.textContent = 'Name: ' + person.name;
